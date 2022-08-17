@@ -6,11 +6,6 @@
     box-sizing: border-box;
 }
 
-:root {
-    --bg-light: white;
-    --text-color: #70757A;
-}
-
 html, body {
     width: 100%;
     height: 100%;
@@ -18,8 +13,8 @@ html, body {
 
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background-color: var(--bg-light);
-    color: var(--text-color);
+    background-color: white;
+    color: black;
 }
 
 header {
@@ -178,7 +173,7 @@ footer ul {
     -webkit-tap-highlight-color: transparent;
 }
 
-.formSearch:hover {;
+.formSearch:hover {
     box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
     border-color: rgba(223,225,229,0);
 }
@@ -207,4 +202,38 @@ footer ul {
 
 .formButton button:hover {
     border: 1px solid #dadce0;
+}
+
+/*Dark Mode*/
+
+.dark-mode {
+    background-color: #202124;
+    color: white;
+}
+
+.dark-mode .atalhos ul li a {
+    color: white;
+}
+
+.dark-mode .services svg path {
+    fill: #ffffffde;
+}
+
+.dark-mode .formSearch {
+    background-color: #202124;
+    border: 1px solid #5f6368;
+}
+
+.dark-mode .formButton button {
+    background-color: #303134;
+    color: #e8eaed;
+    border: none;
+}
+
+.dark-mode footer {
+    background: #171717;
+}
+
+.dark-mode .local {
+    border-bottom: 1px solid #3c4043;
 }
